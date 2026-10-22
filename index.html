@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Marco Toss Line - Cricket Toss King</title>
+  
+  <meta name="description" content="Marco Toss Line - 100% Accurate Cricket Toss Prediction, Match Reports & Free Telegram Community.">
+  <meta name="theme-color" content="#07080a">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '957117810798702');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=957117810798702&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #07080a;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.22) 0%, transparent 60%),
+        radial-gradient(circle at 50% 100%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        linear-gradient(180deg, #07080a 0%, #0d0e12 100%);
+      min-height: 100vh;
+      color: #ffffff;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .brand-font {
+      font-family: 'Cinzel', serif;
+    }
+
+    /* Gangsta Gold Gradient Text */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fff2a3 0%, #d4af37 40%, #aa771c 80%, #ffd700 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Metallic Border & Glass Cards */
+    .gangsta-card {
+      background: rgba(18, 19, 24, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.08);
+    }
+
+    /* Avatar Glow Ring */
+    .avatar-wrapper {
+      position: relative;
+    }
+    .avatar-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 9999px;
+      background: linear-gradient(135deg, #ffd700, #b8860b, #4a3b00, #d4af37);
+      animation: rotateBorder 6s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes rotateBorder {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Fixed High-Contrast CTA Button */
+    .gold-cta-btn {
+      background: linear-gradient(135deg, #ffd700 0%, #e5b326 50%, #c48b0a 100%) !important;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      position: relative;
+      overflow: hidden;
+      animation: pulseGlow 2s infinite ease-in-out;
+      border: 1px solid #ffd700;
+    }
+
+    .gold-cta-btn:hover {
+      box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+      transform: translateY(-2px);
+    }
+
+    .gold-cta-btn:active {
+      transform: translateY(1px);
+    }
+
+    /* Light Sheen Effect - kept below text layer */
+    .sheen {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: skewX(-25deg);
+      animation: shine 3s infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    @keyframes shine {
+      0% { left: -100%; }
+      30%, 100% { left: 160%; }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 35px rgba(255, 215, 0, 0.75);
+      }
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-between items-center px-4 py-8 max-w-md mx-auto relative select-none">
+
+  <!-- TOP STATUS BADGE -->
+  <div class="w-full flex justify-center mb-6">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/40 bg-amber-500/10 backdrop-blur-md">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+      <span class="text-xs font-bold tracking-wider uppercase text-amber-300">Live Toss Predictions Active</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="w-full flex flex-col items-center text-center">
+    
+    <!-- Profile Logo Image -->
+    <div class="avatar-wrapper p-1 rounded-full mb-4">
+      <img 
+        src="https://ibb.co/gFrg8nWh" 
+        onerror="this.onerror=null; this.src='https://i.ibb.co/gFrg8nWh/image.jpg';"
+        alt="Marco Toss Line" 
+        class="w-32 h-32 md:w-36 md:h-36 object-cover rounded-full relative z-10 border-2 border-black"
+      />
+    </div>
+
+    <!-- Title with Verified Badge -->
+    <div class="flex items-center justify-center gap-2 mb-1">
+      <h1 class="text-3xl md:text-4xl font-black tracking-wide brand-font gold-gradient-text uppercase">
+        MARCO
+      </h1>
+      <svg class="w-7 h-7 text-amber-400 fill-current" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+    </div>
+    <div class="text-xs uppercase tracking-[0.35em] text-neutral-400 font-bold mb-3">TOSS LINE SPECIALIST</div>
+
+    <!-- Description -->
+    <p class="text-sm text-neutral-300 leading-relaxed px-3 mb-6 max-w-sm font-medium">
+      Undisputed King of Cricket Toss Predictions. Accurate reports, ground reality analysis & 100% fixed session insights on Telegram.
+    </p>
+
+    <!-- KEY STATS COUNTERS -->
+    <div class="grid grid-cols-3 gap-2 w-full mb-6">
+      <div class="gangsta-card rounded-2xl py-3 px-2 text-center">
+        <div class="text-lg md:text-xl font-black text-amber-400">98.4%</div>
+        <div class="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">Accuracy</div>
+      </div>
+      <div class="gangsta-card rounded-2xl py-3 px-2 text-center">
+        <div class="text-lg md:text-xl font-black text-amber-400">100%</div>
+        <div class="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">Genuine</div>
+      </div>
+      <div class="gangsta-card rounded-2xl py-3 px-2 text-center">
+        <div class="text-lg md:text-xl font-black text-amber-400">Instant</div>
+        <div class="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">Alerts</div>
+      </div>
+    </div>
+
+    <!-- CTA BUTTON -->
+    <div class="w-full mb-6">
+      <a 
+        href="https://t.me/+A4KZPsgaKuZkNGVl" 
+        id="ctaJoinBtn"
+        onclick="handleCtaRedirect(event)"
+        class="gold-cta-btn w-full py-4 px-6 rounded-3xl block text-center cursor-pointer transition-all duration-300 no-underline"
+      >
+        <span class="sheen"></span>
+        <div class="relative z-10 flex items-center justify-center gap-3">
+          <svg class="w-6 h-6 fill-current text-black flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .39z"/>
+          </svg>
+          <span class="text-black font-extrabold text-base md:text-lg tracking-wider uppercase drop-shadow-sm">
+            JOIN TELEGRAM CHANNEL
+          </span>
+        </div>
+      </a>
+      <span class="block text-[11px] text-amber-500 font-bold mt-2 uppercase tracking-widest text-center">
+        ⚡ Free Entry for First 100 Members Only
+      </span>
+    </div>
+
+    <!-- FEATURE PILLS -->
+    <div class="w-full space-y-2.5 text-left mb-6">
+      <div class="gangsta-card rounded-2xl py-3 px-4 flex items-center justify-between">
+        <span class="text-sm font-bold text-neutral-200">🏏 100% Accurate Toss Call</span>
+        <span class="text-amber-400 font-extrabold text-xs tracking-wider">VERIFIED</span>
+      </div>
+      <div class="gangsta-card rounded-2xl py-3 px-4 flex items-center justify-between">
+        <span class="text-sm font-bold text-neutral-200">⚡ Match & Session Jackpot Tips</span>
+        <span class="text-amber-400 font-extrabold text-xs tracking-wider">DAILY</span>
+      </div>
+      <div class="gangsta-card rounded-2xl py-3 px-4 flex items-center justify-between">
+        <span class="text-sm font-bold text-neutral-200">👑 VIP Private Community Access</span>
+        <span class="text-amber-400 font-extrabold text-xs tracking-wider">FREE</span>
+      </div>
+      <div class="gangsta-card rounded-2xl py-3 px-4 flex items-center justify-between">
+        <span class="text-sm font-bold text-neutral-200">🔥 Direct Operator Report</span>
+        <span class="text-amber-400 font-extrabold text-xs tracking-wider">DIRECT</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full text-center pt-2">
+    <p class="text-[11px] text-neutral-500 font-semibold tracking-wider">
+      © 2026 MARCO TOSS LINE™. ALL RIGHTS RESERVED.
+    </p>
+  </footer>
+
+  <!-- Pixel Event & Redirection Script -->
+  <script>
+    function handleCtaRedirect(event) {
+      event.preventDefault();
+      const targetUrl = "https://t.me/+A4KZPsgaKuZkNGVl";
+
+      // Fire Meta Pixel Subscribe Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Subscribe', {
+          content_name: 'Marco Toss Line Telegram Join',
+          status: 'Successful'
+        });
+      }
+
+      // 150ms fail-safe redirect
+      setTimeout(function() {
+        window.location.href = targetUrl;
+      }, 150);
+    }
+  </script>
+</body>
+</html>
